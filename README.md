@@ -1,15 +1,15 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Web Development Course
 
-> Description the project.
+In this project, I built a Web Development Course web page. It is based on the original design idea by Cindy Shin in Behance.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages: HTML, CSS, JS. 
+- Frameworks: Bootstrap.
+- Technologies used: Visual Studio Code, Git/GitHub
 
 ## Live Demo (if available)
 
@@ -24,33 +24,22 @@
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+For opening the online version of this project, go to: 
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+To run this project locally on your computer clone using "git clone" command with this repo url.
+Open the file in your code editor. 
+Run the project in you browser. 
+Thanks for watching.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Giuseppe Tomasini**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@GiuseppeTG](https://github.com/GiuseppeTG)
+- Twitter: [@giusetomasini](https://twitter.com/giusetomasini)
+- LinkedIn: [Giuseppe Tomasini](https://www.linkedin.com/in/giuseppe-tomasini-67ba101a8/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -64,9 +53,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Inspiration: original design idea by Cindy Shin in Behance.
 
 ## 📝 License
 
