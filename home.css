@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(./fonts/cocogoose/Cocogoose\ Pro\ Thin-trial.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(./fonts/cocogoose/Cocogoose\ Pro\ Ultralight-trial.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(./fonts/cocogoose/Cocogoose\ Pro\ Light-trial.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(./fonts/cocogoose/Cocogoose\ Pro\ Semilight-trial.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url(./fonts/cocogoose/Cocogoose\ Pro-trial.ttf);
+  font-weight: 500;
+}
+
+:root {
+  --orange: #ec5242; 
+  --darkgray: #272a31;
+  --lightgrey: #d3d3d3;
+  --lato: 'Lato', sans-serif;
+  --cocogoose: 'Cocogoose', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-margin {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* NAVBAR */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+  background-color: white;
+  height: 75px;
+  width: 100%;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  list-style: none;
+  margin-bottom: 0px;
+}
+
+.navbar a {
+  color: var(--lightgrey);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar img {
+  width: 180px;
+  margin-top: 9px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background-color: var(--darkgray);
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(405deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-405deg);
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 75px;
+  flex-direction: column;
+  background-color: var(--darkgray);
+  opacity: 0.95;
+  width: 85%;
+  transition: 0.75s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+}
+
+.nav-item {
+  display: flex;
+  align-content: center;
+  padding: 16px;
+  margin-right: 48px;
+  border-bottom: #d3d3d3ab solid 1px;
+  color: var(--lightgrey);
+}
+
+.nav-menu.active {
+  left: 0;
+  padding: 0px 0;
+}
+
+.nav-menu.active #nav-buy-tickets{
+  padding: 0;
+}
+
+.nav-menu.active #nav-buy-tickets div {
+  padding: 16px;
+  background-color: var(--orange);
+}
+
+
+.nav-menu.active :last-child a {
+  background-color: var(--orange);
+}
+
+.full-screen {
+  height: 100vh;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+  background-color: white;
+}
+
+/* HOMEPAGE */
+
+.homepage {
+  margin-top: 75px;
+}
+
+.headline {
+  background-image: url(images/mobile_intro_bg.png);
+  background-position: center top;
+  background-size: 100%;
+}
+
+
+.title h2 {
+  font-family: var(--lato);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--orange);
+  margin-bottom: 8px;
+}
+
+.title h1 {
+  font-family: var(--cocogoose);
+  font-size: 22px;
+  color: var(--orange);
+}
+
+.title h3 {
+  font-family: var(--lato);
+  font-size: 22px;
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.description {
+  font-family: var(--lato);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.3rem;
+  margin: 28px 0;
+  min-width: 260px;
+  width: 60%;
+  border: white solid 3px;
+  background-color: rgb(245, 245, 246);
+  padding: 10px 20px;
+}
+
+.location {
+  width: fit-content;
+  margin: auto;
+}
+
+.location h3 {
+  font-family: var(--lato);
+  color: var(--darkgray);
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.location p {
+  font-family: var(--lato);
+  font-size: 12px;
+  font-weight: 300;
+}
+
+/* PROGRAM */
+
+.program {
+  background-color: var(--darkgray);
+  background-image: url(images/pattern_bg.png);
+}
+
+.title-type-1 {
+  border-bottom: var(--orange) solid 1px;
+  color: var(--lightgrey);
+  font-family: var(--lato);
+  font-weight: 300;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 8px;
+  width: fit-content;
+}
+
+.program-feature {
+  background-color: rgba(255, 255, 255, 0.183);
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  width: 90%;
+  height: 100px;
+  margin: 10px auto 10px auto;
+}
+
+.program-icon {
+ width: 40px;
+}
+
+.program-feature-title {
+  color: var(--orange);
+  font-family: var(--lato);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3rem;
+}
+
+.program-feature-description {
+  color: var(--lightgrey);
+  font-family: var(--lato);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.3rem;
+}
+
+.join-btn {
+  background-color: var(--orange);
+  font-size: 16px;
+  font-family: var(--lato);
+  padding: 20px;
+  width: fit-content;
+  margin: 30px auto 0 auto;
+}
+
+.join-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ARTISTS */
+
+.title-type-2 {
+  border-bottom: var(--orange) solid 1px;
+  color: var(--darkgray);
+  font-family: var(--lato);
+  font-weight: 400;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 8px;
+  width: fit-content;
+}
+
+.artist-all-container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: auto;
+}
+
+.artist-container {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  margin: 30px 0;
+}
+
+.artist-img {
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.artist-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.artist-info {
+  margin-left: 15px;
+}
+
+.artist-name {
+  font-family: var(--lato);
+  color: var(--darkgray);
+  font-size: 14px;
+}
+
+.artist-work {
+  font-family: var(--lato);
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.artist-p {
+  font-family: var(--lato);
+  color: var(--darkgray);
+  font-size: 10px;
+  font-weight: 300;
+}
+
+/* SPONSORS */
+
+.partner {
+  background-color: var(--darkgray);
+  height: fit-content;
+}
+
+.partner .img-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: 200px;
+  gap: 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner img {
+  width: 100%;
+  max-width: 180px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  padding: 10px;
+  gap: 20px;
+  font-family: var(--lato);
+  font-size: 8px;
+  background-color:rgb(245, 245, 246);
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width:768px) {
+
+  /* NAVBAR */
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar li {
+    margin-bottom: 0px;
+    font-family: var(--lato);
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .navbar a {
+    color: var(--darkgray);
+  }
+  
+  .navbar {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  #logo {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: inherit;
+    gap: 16px;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+  
+  .nav-item {
+    display: block;
+    align-content: center;
+    padding: 0;
+    margin-right: 0;
+    border-bottom: none;
+    color: none;
+  }
+
+  #nav-buy-tickets {
+    padding: 10px;
+    background-color: var(--orange);
+    margin-left: auto;
+  }
+
+  /* HEADLINE */
+
+  .headline {
+    background-image: url(images/main_big.png);
+    background-position: left top;
+    background-size: 100%;
+  }
+
+  .title h1 {
+    font-size: 50px;
+  }
+
+  .title h2 {
+    font-size: 30px;
+  }
+
+  .title h3 {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+
+
+  .title-type-1 {
+    font-size: 28px;
+  }
+
+  .title-type-2 {
+    font-size: 28px;
+  }
+
+
+  /* PROGRAM */
+
+  .program-features-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .program-feature {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 220px;
+  }
+
+  .program-feature-title {
+    font-size: 18px;
+  }
+  
+  .program-feature-description {
+    font-size: 14px;
+  }
+
+  /* ARTISTS */
+  
+  .artist-all-container {
+    grid-template-columns: auto auto;
+    gap: 50px;
+  }
+  
+  .artist-container {
+    height: 120px;
+  }
+  
+  .artist-img {
+    min-width: 120px;
+    min-height: 120px;
+  }
+  
+  .artist-img img {
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .artist-info {
+    margin-left: 18px;
+  }
+  
+  .artist-name {
+    font-size: 18px;
+  }
+  
+  .artist-work {
+    font-size: 16px;
+  }
+  
+  .artist-p {
+    font-size: 12px;
+  }
+}
+
+
+/* ABOUT */
+
+.about .headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin-top: 75px;
+}
+
+.about .description {
+  margin: 30px auto;
+}
+
+
+
+/* LOGO */
+
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about .logo-description {
+  margin: 30px auto;
+  font-family: var(--lato);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.3rem;
+  min-width: 260px;
+  width: 60%;
+ 
+}
+
+.logo-section img {
+  width: 50%;
+}
+
+/* PREVIOUS CONCERTS */
+
+.previous-concerts {
+  text-align: center;
+}
+
+.concerts-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.img-concert-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+
+.img-concert-container img {
+  width: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.img-concert-container .img-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ec534291;
+}
+
+.img-layer {
+  font-family: var(--lato);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.img-layer a {
+  border: white solid 2px;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

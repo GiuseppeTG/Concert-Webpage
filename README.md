@@ -54,6 +54,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Inspiration: original design idea by Cindy Shin in Behance.
+- Creative Commons
 
 ## 📝 License
 
