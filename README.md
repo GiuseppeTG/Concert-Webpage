@@ -17,7 +17,7 @@ In this project, I built a concert web page. It is based on the original design 
 
 ## Getting Started
 
-For opening the online version of this project, go to: https://giuseppetg.github.io/Giuseppe-Web-development-course/
+For opening the online version of this project, go to: https://giuseppetg.github.io/Giuseppe-Concert-Webpage/
 
 To run this project locally on your computer clone using "git clone" command with this repo url.
 Open the file in your code editor. 
@@ -47,6 +47,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Inspiration: original design idea by Cindy Shin in Behance.
+- Creative Commons
 
 ## 📝 License
 
