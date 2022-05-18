@@ -1,5 +1,5 @@
 // MENU
-
+const body = document.querySelector('body');
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const header = document.querySelector('header');
@@ -37,7 +37,7 @@ const artists = [
   },
   {
     image: 'images/philip-glass_uhPi9s0.jpg',
-    alt: 'Image of Phillip Glass', 
+    alt: 'Image of Phillip Glass',
     name: 'Phillip Glass',
     work: 'American composer and pianist',
     description: 'He is widely regarded as one of the most influential composers of the late 20th century. Glass\'s work has been associated with minimalism, being built up from repetitive phrases and shifting layers.',
@@ -63,14 +63,10 @@ const artists = [
     work: 'American composer',
     description: 'Influenced by jazz and Indian classical music, his music became notable for its innovative use of repetition, tape music techniques, and delay systems.',
   },
-]
-
-
+];
 
 const featuredArtists = (artists) => {
-
-  for(let i = 0; i < artists.length; i++){
-
+  for (let i = 0; i < artists.length; i += 1) {
     const artistAllContainer = document.querySelector('.artist-all-container');
 
     const artistContainer = document.createElement('div');
@@ -86,18 +82,18 @@ const featuredArtists = (artists) => {
     const artistInfo = document.createElement('div');
     artistInfo.classList.add('artist-info');
 
-    const artistName = document.createElement('h3')
+    const artistName = document.createElement('h3');
     artistName.classList.add('artist-name');
     artistName.textContent = artists[i].name;
 
     const artistWork = document.createElement('h4');
     artistWork.classList.add('artist-work');
-    artistWork.textContent = artists[i].work
+    artistWork.textContent = artists[i].work;
 
     const artistP = document.createElement('p');
     artistP.classList.add('artist-p');
     artistP.textContent = artists[i].description;
-    
+
     artistInfo.appendChild(artistName);
     artistInfo.appendChild(artistWork);
     artistInfo.appendChild(artistP);
@@ -105,9 +101,7 @@ const featuredArtists = (artists) => {
     artistContainer.appendChild(artistImg);
     artistContainer.appendChild(artistInfo);
     artistAllContainer.appendChild(artistContainer);
-
   }
 };
 
 featuredArtists(artists, artists.length);
-

@@ -31,7 +31,7 @@
 }
 
 :root {
-  --orange: #ec5242; 
+  --orange: #ec5242;
   --darkgray: #272a31;
   --lightgrey: #d3d3d3;
   --lato: 'Lato', sans-serif;
@@ -71,11 +71,23 @@ header {
 
 .navbar li {
   list-style: none;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .navbar a {
   color: var(--lightgrey);
+  text-decoration: none;
+}
+
+.join-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.img-layer a {
+  border: white solid 2px;
+  color: white;
+  padding: 20px;
   text-decoration: none;
 }
 
@@ -86,6 +98,15 @@ header {
 #logo {
   margin-left: auto;
   margin-right: auto;
+}
+
+footer img {
+  width: 100px;
+  height: auto;
+}
+
+footer p {
+  margin-bottom: 5px;
 }
 
 .navbar img {
@@ -144,10 +165,10 @@ header {
 
 .nav-menu.active {
   left: 0;
-  padding: 0px 0;
+  padding: 0 0;
 }
 
-.nav-menu.active #nav-buy-tickets{
+.nav-menu.active #nav-buy-tickets {
   padding: 0;
 }
 
@@ -155,7 +176,6 @@ header {
   padding: 16px;
   background-color: var(--orange);
 }
-
 
 .nav-menu.active :last-child a {
   background-color: var(--orange);
@@ -181,7 +201,6 @@ header {
   background-position: center top;
   background-size: 100%;
 }
-
 
 .title h2 {
   font-family: var(--lato);
@@ -267,7 +286,7 @@ header {
 }
 
 .program-icon {
- width: 40px;
+  width: 40px;
 }
 
 .program-feature-title {
@@ -295,10 +314,7 @@ header {
   margin: 30px auto 0 auto;
 }
 
-.join-btn a {
-  color: white;
-  text-decoration: none;
-}
+
 
 /* ARTISTS */
 
@@ -369,10 +385,9 @@ header {
 
 .partner {
   background-color: var(--darkgray);
-  height: fit-content;
 }
 
-.partner .img-container{
+.partner .img-container {
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
@@ -396,20 +411,10 @@ footer {
   gap: 20px;
   font-family: var(--lato);
   font-size: 8px;
-  background-color:rgb(245, 245, 246);
+  background-color: rgb(245, 245, 246);
 }
 
-footer img {
-  width: 100px;
-  height: auto;
-}
-
-footer p {
-  margin-bottom: 5px;
-}
-
-@media only screen and (min-width:768px) {
-
+@media only screen and (min-width: 768px) {
   /* NAVBAR */
 
   .hamburger {
@@ -417,22 +422,22 @@ footer p {
   }
 
   .navbar li {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-family: var(--lato);
     font-size: 14px;
     font-weight: 300;
   }
-  
+
   .navbar a {
     color: var(--darkgray);
   }
-  
+
   .navbar {
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 30px;
   }
-  
+
   #logo {
     margin-left: 0;
     margin-right: 0;
@@ -448,14 +453,13 @@ footer p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
   }
-  
+
   .nav-item {
     display: block;
     align-content: center;
     padding: 0;
     margin-right: 0;
     border-bottom: none;
-    color: none;
   }
 
   #nav-buy-tickets {
@@ -489,8 +493,6 @@ footer p {
     line-height: 1.9;
   }
 
-
-
   .title-type-1 {
     font-size: 28px;
   }
@@ -519,43 +521,43 @@ footer p {
   .program-feature-title {
     font-size: 18px;
   }
-  
+
   .program-feature-description {
     font-size: 14px;
   }
 
   /* ARTISTS */
-  
+
   .artist-all-container {
     grid-template-columns: auto auto;
     gap: 50px;
   }
-  
+
   .artist-container {
     height: 120px;
   }
-  
+
   .artist-img {
     min-width: 120px;
     min-height: 120px;
   }
-  
+
   .artist-img img {
     box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
   }
-  
+
   .artist-info {
     margin-left: 18px;
   }
-  
+
   .artist-name {
     font-size: 18px;
   }
-  
+
   .artist-work {
     font-size: 16px;
   }
-  
+
   .artist-p {
     font-size: 12px;
   }
@@ -596,7 +598,6 @@ footer p {
   line-height: 1.3rem;
   min-width: 260px;
   width: 60%;
- 
 }
 
 .logo-section img {
@@ -631,6 +632,13 @@ footer p {
   display: block;
 }
 
+.img-layer {
+  font-family: var(--lato);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2;
+}
+
 .img-concert-container .img-layer {
   display: flex;
   justify-content: center;
@@ -641,37 +649,3 @@ footer p {
   height: 100%;
   background-color: #ec534291;
 }
-
-.img-layer {
-  font-family: var(--lato);
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 2;
-}
-
-.img-layer a {
-  border: white solid 2px;
-  color: white;
-  padding: 20px;
-  text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
