@@ -1,14 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Web Development Course
+# Wayhome Minimalistic Concert
 
-In this project, I built a Web Development Course web page. It is based on the original design idea by Cindy Shin in Behance.
+In this project, I built a concert web page. It is based on the original design idea by Cindy Shin in Behance.
 
 
 ## Built With
 
 - Major languages: HTML, CSS, JS. 
-- Frameworks: Bootstrap.
 - Technologies used: Visual Studio Code, Git/GitHub
 
 ## Live Demo (if available)
