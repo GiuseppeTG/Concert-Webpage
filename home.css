@@ -505,8 +505,12 @@ footer {
   background-color: #ec534291;
 }
 
-@media only screen and (min-width: 768px) {
+.dark-footer {
+  background-color: var(--darkgray);
+  color: var(--lightgrey);
+}
 
+@media only screen and (min-width: 768px) {
   /* NAVBAR */
 
   .dark-bar {
@@ -518,17 +522,17 @@ footer {
     display: flex;
     justify-content: flex-end;
   }
-  
+
   .dark-bar ul {
     display: flex;
     list-style: none;
     gap: 10px;
   }
-  
+
   .dark-bar img {
     width: 12px;
   }
-  
+
   .dark-bar a {
     text-decoration: none;
     color: var(--lightgrey);
@@ -637,7 +641,7 @@ footer {
     margin: 0 0 0 0;
     transition: 0.3s ease-in-out;
   }
-  
+
   .program-feature:hover {
     border: var(--lightgrey) solid 1px;
     background-color: #d3d3d332;
@@ -686,6 +690,6 @@ footer {
   .concerts-img-container {
     flex-direction: row;
     max-width: 800px;
-    margin:auto;
+    margin: auto;
   }
 }
