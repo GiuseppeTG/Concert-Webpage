@@ -18,7 +18,7 @@ In this project, I built a Web Development Course web page. It is based on the o
 
 ## Getting Started
 
-For opening the online version of this project, go to: https://giuseppetg.github.io/Giuseppe-Web-development-course/
+For opening the online version of this project, go to: https://giuseppetg.github.io/Giuseppe-Concert-Webpage/
 
 To run this project locally on your computer clone using "git clone" command with this repo url.
 Open the file in your code editor. 
