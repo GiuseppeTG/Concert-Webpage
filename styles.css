@@ -413,7 +413,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  height: 130px;
   padding: 10px;
   gap: 20px;
   font-family: var(--lato);
