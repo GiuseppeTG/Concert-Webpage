@@ -3,6 +3,8 @@
 # Wayhome Minimalistic Concert
 
 In this project, I built a concert web page. It is based on the original design idea by Cindy Shin in Behance.
+-HTML CSS JS best practices.
+-Responsive Web Design.
 
 
 ## Built With
