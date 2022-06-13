@@ -14,7 +14,7 @@ In this project, I built a concert web page. It is based on the original design 
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]([https://livedemo.com](https://giuseppetg.github.io/Giuseppe-Concert-Webpage/))
 
 
 ## Getting Started
