@@ -12,7 +12,7 @@ In this project, I built a concert web page. It is based on the original design 
 - Major languages: HTML, CSS, JS. 
 - Technologies used: Visual Studio Code, Git/GitHub
 
-## [Live Demo] (https://giuseppetg.github.io/Concert-Webpage/)
+## [Live Demo](https://giuseppetg.github.io/Concert-Webpage/)
 
 ## Getting Started
 
